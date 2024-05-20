@@ -5,7 +5,7 @@ const MainMenu = ({ setRunning }) => {
         {"Minesweeper"}
       </h1>
       <button
-        className="text-white font-extrabold border border-4 border-white shadow-lg shadow-inner shadow-white hover:shadow-md hover:shadow-white active:shadow-sm active-shadow-white rounded-full text-2xl font-medium py-5 px-10"
+        className="text-white font-extrabold border border-4 border-white shadow-inner-lg shadow-inner shadow-white hover:shadow-md hover:shadow-white active:shadow-sm active-shadow-white rounded-full text-2xl font-medium py-5 px-10"
         onClick={() => setRunning(true)}
       >
         {"START GAME"}
