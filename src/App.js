@@ -7,7 +7,7 @@ function App() {
   const [isRunning, setRunning] = useState(false);
   return (
     <div className="App flex justify-center items-center-xxx h-[100dvh] p-4">
-      <div className="container flex flex-col items-center justify-center border border-[#ffffff40] backdrop-blur rounded-3xl gap-8 p-4">
+      <div className="container flex flex-col items-center justify-center border border-4 border-[#ffffff40] shadow-inner shadow-lg shadow-white backdrop-blur-md backdrop-saturate-150 rounded-3xl gap-8 p-4">
         {isRunning ? (
           <GridBoard setRunning={setRunning} />
         ) : (

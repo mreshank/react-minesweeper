@@ -107,9 +107,14 @@ const GridBoard = ({ setRunning }) => {
         <span className="flex-1 text-lg scale-125">{`🚩 ${userFlags}`}</span>
         <button
           className="font-light scale-90 border rounded px-2 py-0.5"
-          onClick={() => setCheatMode(!cheatMode)} title="Enable Cheats to know the positions of all Values and Mines"
+          onClick={() => setCheatMode(!cheatMode)}
+          title="Enable Cheats to know the positions of all Values and Mines"
         >{`Cheat Mode : ${cheatMode ? "On" : "Off"}`}</button>
-        <button className="shadow shadow-white active:shadow-sm active:shadow-white rounded-full size-8" onClick={() => setRunning(false)} title="Exit Game">
+        <button
+          className="shadow shadow-white active:shadow-sm active:shadow-white rounded-full size-8"
+          onClick={() => setRunning(false)}
+          title="Exit Game"
+        >
           ✕
         </button>
       </div>

@@ -14,11 +14,11 @@ const Box = ({ box, Flag, Reveal, Level, cheatMode }) => {
       } ${
         (box.x + box.y) % 2
           ? box.reveal
-            ? "bg-[#D7B899]"
-            : "bg-[#A2D148] hover:bg-[#B9DD76]"
+            ? "bg-[#D7B899]" 
+            : "bg-[#A2D148] hover:bg-[#B9DD76]" 
           : box.reveal
-          ? "bg-[#E5C29F]"
-          : "bg-[#AAD750] hover:bg-[#BFE17D]"
+          ? "bg-[#E5C29F]" 
+          : "bg-[#AAD750] hover:bg-[#BFE17D]" 
       }`}
     >
       {box.reveal
