@@ -1,4 +1,4 @@
-const Box = ({ children: box, Flag, Reveal }) => {
+const Box = ({ box, Flag, Reveal, Level, cheatMode }) => {
   return (
     <div
       onClick={(e) => {
@@ -9,7 +9,9 @@ const Box = ({ children: box, Flag, Reveal }) => {
         e.preventDefault();
         if (!box.reveal) Flag(box.x, box.y);
       }}
-      className={`cursor-pointer flex justify-center items-center size-10 ${
+      className={`cursor-pointer flex justify-center items-center ${
+        Level === "Easy" ? "size-14" : Level === "Medium" ? "size-8" : "size-6"
+      } ${
         (box.x + box.y) % 2
           ? box.reveal
             ? "bg-[#D7B899]"
@@ -27,8 +29,9 @@ const Box = ({ children: box, Flag, Reveal }) => {
           : " "
         : box.flag
         ? "🚩"
+        : cheatMode
+        ? box.value
         : " "}
-      {/* : box.value} */}
     </div>
   );
 };

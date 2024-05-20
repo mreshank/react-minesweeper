@@ -7,11 +7,9 @@ function App() {
   const [isRunning, setRunning] = useState(false);
   return (
     <div className="App flex justify-center items-center-xxx h-[100dvh] p-4">
-      <div className="container flex flex-col items-center border border-grey gap-4">
-        <h1 className="text-4xl font-bold p-4">{"Minesweeper"}</h1>
-        <span>{"Flags : 10, etc. . ."}</span>
+      <div className="container flex flex-col items-center justify-center border border-[#ffffff40] backdrop-blur rounded-3xl gap-8 p-4">
         {isRunning ? (
-          <GridBoard isRunning={isRunning} setRunning={setRunning} />
+          <GridBoard setRunning={setRunning} />
         ) : (
           <MainMenu setRunning={setRunning} />
         )}
@@ -21,3 +19,7 @@ function App() {
 }
 
 export default App;
+
+// 10 10 10
+// 18 18 40
+// 24 24 99
